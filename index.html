@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dhamaal-games</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+	
+<style>
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html {
+  overflow-y: scroll;
+}
+body {
+  background: #c1bdba;
+  font-family: 'Titillium Web', sans-serif;
+}
+.resend{color:#ff0000;font-size: 13px;
+    position: relative;
+    /* margin-top: 1px; */
+    top: -33px;}
+	
+	.thirty{    position: relative;
+  margin-top: -56px;
+    color: #177700;
+    font-weight: 700;
+    font-size: 11px;
+}
+	
+::placeholder{color:#fff !important;font-weight:600;}
+
+.ott::placeholder{color:#fff !important;font-size:25px !important;}
+a {
+  text-decoration: none;
+  color: #1ab188;
+  transition: 0.5s ease;
+}
+a:hover {
+  color: #179b77;
+}
+.form {
+background-image: linear-gradient( 
+315deg , #fbb034 0%, #ffdd00 74%);
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, .3);
+}
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+    background: #7e715b;
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+    width: 30px;
+    height: 30px !important;
+    border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.tab-group li a:hover {
+  background: #179b77;
+  color: #fff;
+}
+.tab-group .active a {
+  background: #281900!important;
+  color: #fff;
+}
+.tab-content > div:last-child {
+  display: none;
+}
+h1 {
+  text-align: center;
+  color: #281900;font-size:28px;
+  font-weight: 600;
+  margin: 0 0 40px;
+}
+label {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, .5);
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+label .req {
+  margin: 2px;
+  color: #1ab188;
+}
+label.active {
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+label.active .req {
+  opacity: 0;
+}
+label.highlight {
+  color: #fff;
+}
+input, textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #fff;
+  border-radius: 0;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size:16px;
+  font-weight: 600;
+      background:#177700;
+    border-radius: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  color: #fff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: #179b77;
+}
+.button-block {width: 49%;
+    margin: auto;
+  display: block;
+
+}
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+
+
+input, textarea {
+    font-size: 22px;
+    display: block;
+    background: #281900;
+	    width: 74%;
+    margin: auto;
+   border:2px solid #4f361c;
+    height: 100%;
+	border-radius:10px;
+    padding: 10px 10px !important;
+    background: #512d25;}
+	
+	.tab-group .active a {
+    background: #1ab188;
+    color: #fff;
+    padding: 5px 7px;
+}
+
+.tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 4px 0;}
+	
+	.tab-group {
+    list-style: none;
+    margin: auto;
+    margin-left: 225px;
+    position: relative;
+    padding: 0;
+    /* margin: 0 0 40px 0; */
+    top: -23px;
+}
+	.text-center{text-align:center;}
+	
+	
+	.userInput{
+	display: flex;
+	justify-content: center;
+}
+
+.ott{
+	margin: 10px;
+	height: 39px;
+	width: 39px;
+	font-weight:600;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-family: arimo;
+	font-size: 1.2rem;
+	background: #605e35;border:2px solid #585227;
+
+}
+
+
+
+.tb{    position: relative;
+    left: 9px;}
+
+@media only screen and (max-width: 768px) {
+.tab-group {
+    list-style: none;
+    margin: auto;
+    margin-left: 123px;}
+	
+	input, textarea {
+    font-size: 22px;
+    display: block;
+    background: #281900;
+    width: 87%;}
+
+}
+@media only screen and (max-width:375px)and (min-width:360px) {
+.tab-group {
+    list-style: none;
+    margin: auto;
+    margin-left: 98px;}
+}
+
+
+</style>	
+	
+	
+</head>
+
+<body>
+
+<div class="form">
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">1</a></li>
+        <li class="tab tb"><a  href="#login">2</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Login | Signup</h1>
+          
+          <form action="/" method="post">
+          
+
+
+        
+          
+          <div class="field-wrap">
+          <h3 class="text-center">Enter Mobile number</h3>
+            <input type="number" placeholder="📞 +91 7992278379">
+          </div>
+          
+         <a href="#"> <input type="button" value="Send OTP" class="button button-block" id="my-otp"> </a>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+        <h1>Login | Signup</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+			 <h3 class="text-center">Enter OTP</h3>
+          <div class="userInput">
+			<input class="ott" type="text" id='ist' maxlength="1" placeholder="5" >
+			<input class="ott" type="text" id="sec" maxlength="1" placeholder="1" >
+			<input class="ott" type="text" id="third" maxlength="1" placeholder="9" >
+			<input class="ott"  type="text" id="fourth" maxlength="1" placeholder="8"  >
+			<input class="ott"  type="text" id="fifth" maxlength="1" placeholder="4" >
+			<input class="ott" type="text" id="Sixth" maxlength="1" placeholder="2" >
+		</div>
+		<h6 class="text-center resend">Resend<h6>
+		<h6 class="text-center thirty">Resend OTP in 30 secs<h6>
+    
+          </div>
+          
+        
+          
+    
+          
+          <input type="button" value="Join & Play" class="button button-block"/>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+
+
+
+<script>
+$('.form').find('input, textarea').on('keyup blur focus', function (e) {
+  
+  var $this = $(this),
+      label = $this.prev('label');
+
+	  if (e.type === 'keyup') {
+			if ($this.val() === '') {
+          label.removeClass('active highlight');
+        } else {
+          label.addClass('active highlight');
+        }
+    } else if (e.type === 'blur') {
+    	if( $this.val() === '' ) {
+    		label.removeClass('active highlight'); 
+			} else {
+		    label.removeClass('highlight');   
+			}   
+    } else if (e.type === 'focus') {
+      
+      if( $this.val() === '' ) {
+    		label.removeClass('highlight'); 
+			} 
+      else if( $this.val() !== '' ) {
+		    label.addClass('highlight');
+			}
+    }
+
+});
+
+$('.tab a').on('click', function (e) {
+  
+  e.preventDefault();
+  
+  $(this).parent().addClass('active');
+  $(this).parent().siblings().removeClass('active');
+  
+  target = $(this).attr('href');
+
+  $('.tab-content > div').not(target).hide();
+  
+  $(target).fadeIn(600);
+  
+});
+</script>
+
+
+<script>
+$("#my-otp").click(function(){
+  $("#signup").hide();
+  
+  $("#login").show();
+
+
+
+  
+});
+
+</script>
+</body>
+
+</html>
